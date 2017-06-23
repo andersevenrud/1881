@@ -1,8 +1,8 @@
 {
   "name": "andersevenrud/1881",
-  "description": "API Interface for 1881",
+  "description": "API Library for 1881",
   "license": "MIT",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "authors": [
     {
       "name": "Anders Evenrud",
@@ -19,13 +19,5 @@
     "psr-4": {
       "DM1881\\": "src/DM1881"
     }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "DM1881\\": "src/DM1881"
-    }
-  },
-  "config": {
-    "sort-packages": true
   }
 }
