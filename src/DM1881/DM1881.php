@@ -37,7 +37,7 @@ use DateTime;
 use InvalidArgumentException;
 
 /**
- * 1881 API Interface
+ * 1881 API Library
  * @author Anders Evenrud <andersevenrud@gmail.com>
  * @link https://developer.1881.no/hc/no/sections/203250705-Dokumentasjon
  * @version 0.5

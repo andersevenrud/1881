@@ -28,7 +28,7 @@ namespace DM1881;
 use stdClass;
 
 /**
- * 1881 API Interface - Result Object
+ * 1881 API Library - Result Object
  * @author Anders Evenrud <andersevenrud@gmail.com>
  * @link https://developer.1881.no/hc/no/sections/203250705-Dokumentasjon
  * @version 0.5

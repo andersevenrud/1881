@@ -1,6 +1,6 @@
-# API Interface for 1881
+# API Library for 1881
 
-A simple PHP interface to communicate with 1881's API.
+A simple PHP library to communicate with 1881's API.
 
 Uses JWT and Guzzle.
 
@@ -13,6 +13,8 @@ composer require andersevenrud/1881
 ```
 
 ## Examples
+
+Supports all API methods provided, example to look up person:
 
 ```php
 use DM1881\DM1881;
@@ -28,7 +30,8 @@ var_dump($client->searchPerson('ola bull'));;
 
 ## Changelog
 
-* **0.5** - Initial release
+* **0.5.1** - Updated documentation
+* **0.5.0** - Initial release
 
 ## License
 
