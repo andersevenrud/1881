@@ -30,6 +30,7 @@ var_dump($client->searchPerson('ola bull'));;
 
 ## Changelog
 
+* **0.5.3** - Bufixes
 * **0.5.2** - Updated composer.json
 * **0.5.1** - Updated documentation
 * **0.5.0** - Initial release

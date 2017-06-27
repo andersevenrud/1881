@@ -75,6 +75,23 @@ class DM1881Result
     }
 
     /**
+     * Create a new instance from JSON Array
+     *
+     * @since 0.5
+     * @param stdClass $json JSON Data
+     * @return DM1881Result
+     */
+    static public function createFromArray(Array $json)
+    {
+        return new static(
+            -1,
+            sizeof($json),
+            null,
+            $json
+        );
+    }
+
+    /**
      * Gets the query time
      *
      * @since 0.5

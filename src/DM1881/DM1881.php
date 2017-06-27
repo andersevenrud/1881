@@ -35,6 +35,7 @@ use Firebase\JWT\JWT;
 
 use DateTime;
 use InvalidArgumentException;
+use stdClass;
 
 /**
  * 1881 API Library
@@ -156,6 +157,9 @@ class DM1881
             ]);
 
             $data = json_decode((string)$response->getBody());
+            if ( is_array($data) && !is_object($data) ) {
+                return DM1881Result::createFromArray($data);
+            }
 
             return DM1881Result::create($data);
         } catch ( ClientException $e ) {
@@ -207,6 +211,10 @@ class DM1881
     {
         $isPhone = $e === 'phonenumber';
         $finalArgs = $this->checkArguments($args, $isPhone ? null : $q);
+
+        if ( $isPhone ) {
+            $e .= '/' . $q;
+        }
 
         return $this->request($e, $finalArgs);
     }
