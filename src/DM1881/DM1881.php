@@ -157,6 +157,10 @@ class DM1881
             ]);
 
             $data = json_decode((string)$response->getBody());
+            if ( is_null($data) ) {
+                return DM1881Result::createFromArray([]);
+            }
+
             if ( is_array($data) && !is_object($data) ) {
                 return DM1881Result::createFromArray($data);
             }
