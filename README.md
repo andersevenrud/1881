@@ -30,6 +30,7 @@ var_dump($client->searchPerson('ola bull'));;
 
 ## Changelog
 
+* **0.5.5** - Added first() and eq() to result class
 * **0.5.4** - Bugfixes
 * **0.5.3** - Bugfixes
 * **0.5.2** - Updated composer.json

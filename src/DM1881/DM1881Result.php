@@ -135,4 +135,26 @@ class DM1881Result
         return $this->results;
     }
 
+    /**
+     * Gets the first result
+     *
+     * @since 0.5.5
+     * @return Object
+     */
+    public function first()
+    {
+        return $this->numberOfHits ? $this->results[0] : null;
+    }
+
+    /**
+     * Gets a result by index result
+     *
+     * @since 0.5.5
+     * @return Object
+     */
+    public function eq($index)
+    {
+        return isset($this->results[$index]) ? $this->results[$index] : null;
+    }
+
 }
