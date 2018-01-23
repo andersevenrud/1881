@@ -2,7 +2,7 @@
   "name": "andersevenrud/1881",
   "description": "API Library for 1881",
   "license": "MIT",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "authors": [
     {
       "name": "Anders Evenrud",
@@ -12,8 +12,8 @@
   ],
   "require": {
     "php": ">=5.6.4",
-    "firebase/php-jwt": "^4.0",
-    "guzzlehttp/guzzle": "^6.2"
+    "firebase/php-jwt": "^5.0",
+    "guzzlehttp/guzzle": "^6.3"
   },
   "autoload": {
     "psr-4": {
